@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Prediksi Penyakit Liver</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container pt-5">
+
+		<div class="form-group">
+			<a href="/form_predict" class="btn btn-success">
+				<i class="fa fa-angle-double-left"></i> Kembali
+			</a>
+		</div>
+
+		{% if prediction_text == 'Anda terkena Liver' %}
+		<div class="alert alert-danger">
+			<h1>{{ prediction_text }}</h1>
+      <hr class="my-1">
+			<p>Segera periksa dan konsultasikan ke dokter!</p>
+
+			<p>Gejala penyakit liver</p>
+			<ul>
+				<li>Nyeri perut (terutama di sisi sebelah kanan atas)</li>
+				<li>Mual dan muntah</li>
+				<li>Nafsu makan menurun</li>
+				<li>Penurunan gairah seksual/li>
+				<li>Perubahan warna feses menjadi pucat atau kehitaman</li>
+				<li>Menderita sakit kuning</li>
+				<li>Asites atau perut membengkak dan berisi cairan</li>
+				<li>Warna urine menjadi gelap</li>
+				<li>Kulit menjadi gatal dan mudah memar</li>
+			</ul>
+			<p>Penyebab penyakit liver</p>
+			<ul>
+				<li>Infeksi virus, seperti virus hepatitis</li>
+				<li>Penyakit autoimun yang menyebabkan sistem imun tubuh menyerang sel atau jaringan sehat pada hati</li>
+				<li>Faktor genetik</li>
+				<li>Kebiasaan mengonsumsi minuman beralkohol secara berlebihan</li>
+				<li>Pola makan tidak sehat</li>
+				<li>Obesitas</li>
+				<li>Penyalahgunaan obat-obatan</li>
+				<li>Paparan senyawa kimia beracun</li>
+				<li>Pertumbuhan sel kanker</li>
+				<li>Pemakaian jarum suntik bersama dengan orang lain</li>
+				<li>Melakukan tato atau tindikan dengan alat yang tidak steril</li>
+				<li>Hubungan seksual yang tidak aman atau tanpa pelindung</li>
+			</ul>
+		</div>
+		{% else %}
+		<div class="alert alert-success">
+			<h1>{{ prediction_text }}</h1>
+			<hr class="my-1">
+			<p>Tetaplah waspada dan jaga kesehatan Anda!</p>
+
+			<p>Cara menjaga kesehatan untuk mencegah penyakit liver</p>
+			<ul>
+				<li>Memperhatikan asupan makanan yang bergizi</li>
+				<li>Olahraga dengan Teratur</li>
+				<li>Hindari alkohol</li>
+				<li>Menghindari paparan zat beracun</li>
+				<li>Mencukupi kebutuhan cairan tubuh (2 liter/hari)</li>
+				<li>Melakukan vaksinasi hepatitis</li>
+				<li>Menjaga berat badan</li>
+			</ul>
+		</div>
+		{% endif %}
+		
+	</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
