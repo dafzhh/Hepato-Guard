@@ -10,12 +10,6 @@ The dataset contains nearly 865 Color Names.
 **Client:** HTML, CSS, JS
 
 **Server:** Flask
-
-  
-## Demo
-
-![](/static/colorName.gif)
-
   
 ## Lessons Learned
 
@@ -28,7 +22,7 @@ I was able to link the model to HTML file and used for live prediction.
 Clone the project
 
 ```bash
-  git clone https://github.com/LakshmanKishore/colorNamePrediction.git
+  git clone https://github.com/dafzhh/Hepato-Guard.git
 ```
 
 Go to the project directory
@@ -48,5 +42,3 @@ Start the server
 ```bash
   python app.py
 ```
-
-# You can watch the code live [here](https://lakshman-colorname.herokuapp.com)
