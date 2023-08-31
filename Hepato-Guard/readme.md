@@ -22,7 +22,7 @@ I was able to link the model to HTML file and used for live prediction.
 Clone the project
 
 ```bash
-  git clone https://github.com/dafzhh/Hepato-Guard.git
+  git clone https://github.com/dafzhh/Hepato-Guard/tree/main/Hepato-Guard.git
 ```
 
 Go to the project directory
